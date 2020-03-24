@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(
+        35deg,
+        #a0277cce,
+        #2aa0cfd5);
+}
+
+h3 {
+    background: #721c1c;
+    text-align: center;
+    height: 50px;
+    font-size: 2em;
+    border-radius: 60px;
+    border: 6px solid rgba(155, 62, 135, 0.521);
+}
+.centeredContainer {
+    display: flex;
+    justify-content: center;
+}
+#ball {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 35%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  .text {
+    background: #721c1c;
+    text-align: center;
+    height: 20px;
+    font-size: .8em;
+    border-radius: 30px;
+    border: 3px solid rgba(155, 62, 135, 0.521);
+  }
