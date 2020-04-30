@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderDojo</title>
+</head>
+<body>
+    <script>
+        var value1 = 9;
+        var value2 = 8;
+        console.log(value1 + value2);
+    </script>
+    <script>
+        var canvas = document.createElement('canvas');
+        canvas.width = 800;
+        canvas.height = 600;
+        document.body.appendChild(canvas);
+        var c = canvas.getContext('2d');
+
+        var x = 10;
+        var y = 60;
+        
+        window.addEventListener('load', start);
+        
+        function start() {
+            window.requestAnimationFrame(loop);
+        }
+        
+        function loop() {
+            // Drawing code will go here
+            c.fillStyle = 'red';
+            c.fillRect (x, 10, 60, 1000);
+            x++;
+            window.requestAnimationFrame(loop);
+        }
+    
+    </script>
+</body>
+</html>
